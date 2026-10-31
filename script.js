@@ -24,3 +24,12 @@ let clickbtn = document.getElementById("clickbtn");
 clickbtn.addEventListener("click", function () {
   alert("DOM is working");
 });
+
+//
+const inputField = document.getElementById("inputField");
+const updateBtn = document.getElementById("updateBtn");
+const paragraph = document.getElementById("paragraph");
+
+updateBtn.addEventListener("click", function () {
+  paragraph.innerText = inputField.value;
+});
